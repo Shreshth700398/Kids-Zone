@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kids Learning Games</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Kids Learning Games</h1>
+  </header>
+
+  <nav>
+    <button data-game="bodyParts">Match Body Parts</button>
+    <button data-game="alphabet">Alphabet Game</button>
+    <button data-game="numbers">Number Game</button>
+    <button data-game="animals">Animal Guessing</button>
+    <button data-game="fruitsVeggies">Match Fruits & Veggies</button>
+    <button id="parentCornerBtn">Parent Corner</button>
+  </nav>
+
+  <main>
+    <h2 id="gameTitle">Welcome! Choose a game above.</h2>
+    <section id="gameArea"></section>
+
+    <div id="feedback" class="hidden">
+      <img id="feedbackImg" src="" alt="feedback" />
+    </div>
+  </main>
+
+  <section id="parentCorner" class="hidden">
+    <h3>Parent Corner</h3>
+    <p>Here you can monitor your child's progress and reset games.</p>
+    <button id="resetProgressBtn">Reset Progress</button>
+    <button id="closeParentBtn">Close</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
